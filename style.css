@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs-div {
+  display: flex;
+  gap: 20px;
+  margin: 80px;
+  align-items: center;
+}
+
+.tab {
+  border: solid 2px rgb(131, 129, 129);
+  width: 100px;
+  border-radius: 6px;
+  height: 30px;
+  text-align: center;
+  outline: none;
+  position: relative; /* Position context for the SVG icon */
+  padding-right: 30px; /* Space for the SVG icon */
+  display: flex; /* Use flex to align content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.duplicate {
+  border-bottom: solid 3px red;
+}
+
+.unique {
+  border-bottom: solid 3px green;
+}
+
+svg {
+  position: absolute; /* Absolute positioning within the tab */
+  right: 5px; /* Adjust as needed */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  cursor: pointer;
+  display: none;
+}
